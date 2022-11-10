@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Noto+Sans+Mono:wght@300&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+	<title>Q1 Exercise 4</title>
+	<style type="text/css">
+		body{
+			background-color: #9A88A7  ;
+		}
+		h4{
+			font-family: 'Courier Prime', monospace;
+		}
+		h2{
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+
+		label, input{
+			font-family: 'Noto Sans Mono', monospace;
+		}
+
+	</style>
+</head>
+<body>
+<h2>HTML Forms</h2>
+<hr>
+<form action="">
+	<label for="fname"><b>First name:</b></label><br>
+		<input type="text" id="fname" name="fname" value="firstname"><br>
+	<label for="lname"><b>Last name:</b></label><br>
+		<input type="text" id="lname" name="lname" value="lastname"><br>
+	<label for="birthday"><b>Birthday:</b></label><br>
+		<input type="date" id="birthday" name="birthday"><br>
+	<label for="fname"><b>Nationality:</b></label><br>
+		<input type="text" id="nationality" name="nationality" value="Nationality"><br>
+
+<fieldset>
+	<legend>Account Information:</legend>
+		<label for="email"><b>Email:</b></label>
+			<input type="email" id="email" name="email"><br><br>
+		<label for="password"><b>Password:</b></label>
+			<input type="password" id="birthday" name="birthday">
+</fieldset>
+
+	<label for="fname"><b>School last attended:</b></label><br>
+		<input type="text" id="school" name="school" value="Previous School"><br>
+
+	<h4>Grade/Level</h4>
+
+	<input type="radio" id="gr7" name="gr_section" value="gr7">
+		<label for="html"><b>Grade 7</b></label><br>
+	<input type="radio" id="gr8" name="gr_section" value="gr8">
+		<label for="css"><b>Grade 8</b></label><br>
+	<input type="radio" id="gr9" name="gr_section" value="gr9">
+		<label for="javascript"><b>Grade 9</b></label><br>
+	<input type="radio" id="gr10" name="gr_section" value="gr10">
+		<label for="javascript"><b>Grade 10</b></label><br><br>
+
+	<label for="strand"><b><i>Preffered SHS Strand</i></b></label>
+		<select id="strand" name="strand">
+			<option value="Acad">Academic Strand</option>
+			<option value="Arts">Arts and Design Track</option>
+			<option value="Sports">Sports Track</b></option>
+			<option value="Tech"><b>Technical Vocational Livelihood (TVI) Track</b></option>
+		</select>
+
+	<br>
+	<input type="checkbox" id="strand1" name="strand1" value="ACADS">
+	<label for="strand1">Accountancy, Business and Management Strand</label><br>
+	<input type="checkbox" id="strand2" name="strand2" value="STEM">
+	<label for="strand2">Science, Technology, Engineering, and Mathematics (STEM) Strand</label><br>
+	<input type="checkbox" id="strand3" name="strand3" value="HUMMS">
+	<label for="strand3">Humanities and Social Science (HUMMS) Strand</label><br>
+	<input type="checkbox" id="strand4" name="strand4" value="GAS">
+	<label for="strand4">General Academics Strand (GAS)</label><br><br>
+
+	<h4>In 100 words, tell me something about yourself</h4>
+		<textarea name="message" rows="15" cols="50">
+			Tell me something about yourself...
+		</textarea>
+	<br>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Clear">
+</form>
+</body>
+</html>
